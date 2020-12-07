@@ -1,20 +1,37 @@
+# sign_dict = {}
+# with open(filepath1) as sign_fie:
+#     print(sign_fie.read().splitlines())
+#     sign_fie_info = sign_fie.read().splitlines()
+import pprint
+
 filepath1 = r'D:\pylearn\File\sign.txt'
-sign_dict = {}
-with open(filepath1) as sign_fie:
-    print(sign_fie.read().splitlines())
-    sign_fie_info = sign_fie.read().splitlines()
+
+def putInfoToDict(fileName):
+    retDict = {}
+    with open(fileName) as f:
+        lines = f.read().splitlines()
+
+        for line in lines:
+            # remove '(' and ')'
+            line = line.replace('(', '').replace(')', '').replace(';', '').strip()
+
+            parts = line.split(',')
+            ciTime = parts[0].strip().replace("'", '')
+            lessonid = int(parts[1].strip())
+
+            userid = int(parts[2].strip())
+
+            toAdd = {'lessonid': lessonid, 'checkintime': ciTime}
+            # if not in, need to create list first
+            if userid not in retDict:
+                retDict[userid] = []
+            retDict[userid].append(toAdd)
+
+            # or just
+            # retDict.setdefault(userid,[]).append(toAdd)
+
+    return retDict
 
 
-for sign_info in sign_fie_info:
-    print(sign_info)
-#     sign_time = sign_info.split(',')[0].strip()
-#     lesson_id = sign_info.split(',')[1].strip()
-#     student_id = sign_info.split(',')[2].strip()
-#     print(student_id)
-#     # print(time, sign_id, student_id)
-#     toAdd = {'lessonId': lesson_id, 'signTime': sign_time}
-#     if student_id not in sign_dict:
-#         sign_dict[student_id] = []
-#     sign_dict[student_id].append(toAdd)
-#
-# print(sign_dict)
+ret = putInfoToDict(filepath1)
+pprint.pprint(ret)
