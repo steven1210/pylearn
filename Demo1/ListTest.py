@@ -50,3 +50,8 @@ print(list5)
 # 如果不带下标，就删除整个列表
 # del list5
 # print(list5)
+
+# 使用sort()函数对列表进行排序
+list6 = [3, 2, 5, 7, 6, 1, 10, 4, 9, 8, 0]
+list6.sort()
+print(list6)
