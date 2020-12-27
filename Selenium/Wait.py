@@ -1,5 +1,4 @@
 from selenium import webdriver
-import time  # 导入时间模块
 from selenium.webdriver.common.by import By  # 按照什么方式查找
 from selenium.webdriver.support.wait import WebDriverWait  # 等待页面加载某些元素模块
 from selenium.webdriver.support import expected_conditions as EC  # 场景判断模块
