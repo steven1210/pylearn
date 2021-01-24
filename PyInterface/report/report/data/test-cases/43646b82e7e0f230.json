@@ -1,0 +1,128 @@
+{
+  "uid" : "43646b82e7e0f230",
+  "name" : "相乘",
+  "fullName" : "test_case.test_func1.TestLogin#test_pare",
+  "historyId" : "51791ac237cd7f77691838f6f33e253c",
+  "time" : {
+    "start" : 1611326014351,
+    "stop" : 1611326014351,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert (1 * 1) == 3",
+  "statusTrace" : "self = <test_case.test_func1.TestLogin object at 0x000001844BE1EB50>, a = 3\n\n    @allure.story('登录模块2')\n    @allure.title('相乘')\n    @pytest.mark.parametrize('a', [1, 2, 3])\n    def test_pare(self, a):\n        print('----test_pare----')\n>       assert 1 * 1 == a  # 断言\nE       assert (1 * 1) == 3\n\ntest_func1.py:27: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1611326014181,
+      "stop" : 1611326014181,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1611326014358,
+      "stop" : 1611326014358,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录模块2"
+  }, {
+    "name" : "feature",
+    "value" : "登录功能"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_func1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "steven"
+  }, {
+    "name" : "thread",
+    "value" : "1180-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_func1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "3"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fc63b16618e64cd4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (1 * 1) == 3",
+      "time" : {
+        "start" : 1611325949805,
+        "stop" : 1611325949806,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e28873e3c315584",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (1 * 1) == 3",
+      "time" : {
+        "start" : 1611325858984,
+        "stop" : 1611325858984,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "87fb45968bf53108",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (1 * 1) == 3",
+      "time" : {
+        "start" : 1611324346053,
+        "stop" : 1611324346054,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "43646b82e7e0f230.json",
+  "parameterValues" : [ "3" ]
+}

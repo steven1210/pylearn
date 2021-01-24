@@ -1,0 +1,95 @@
+{
+  "uid" : "54744eab46b56562",
+  "name" : "相乘",
+  "fullName" : "test_case.test_func1.TestLogin#test_pare",
+  "historyId" : "c9930f9207d6bf4aa55bfc3b88742e56",
+  "time" : {
+    "start" : 1611325949631,
+    "stop" : 1611325949632,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert (1 * 1) == 2",
+  "statusTrace" : "self = <test_case.test_func1.TestLogin object at 0x0000023A2A9FCF70>, a = 2\n\n    @allure.story('登录')\n    @allure.title('相乘')\n    @pytest.mark.parametrize('a', [1, 2, 3])\n    def test_pare(self, a):\n        print('----test_pare----')\n>       assert 1 * 1 == a  # 断言\nE       assert (1 * 1) == 2\n\ntest_func1.py:27: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1611325949605,
+      "stop" : 1611325949606,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1611325949815,
+      "stop" : 1611325949815,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录"
+  }, {
+    "name" : "feature",
+    "value" : "登录功能"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_func1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "steven"
+  }, {
+    "name" : "thread",
+    "value" : "3640-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_func1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "2"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54744eab46b56562.json",
+  "parameterValues" : [ "2" ]
+}
