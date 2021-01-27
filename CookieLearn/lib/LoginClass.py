@@ -13,5 +13,5 @@ class LoginClass:
 
 
 if __name__ == '__main__':
-    res = LoginClass().login(user_info,getCookie=False)
+    res = LoginClass().login(user_info,getCookie=True)
     print(res)

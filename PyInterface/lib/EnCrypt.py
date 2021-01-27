@@ -1,5 +1,6 @@
 import hashlib
 
+
 # 1,封装MD5加密类
 class Encrypt:
     # 2,封装加密函数
@@ -11,5 +12,6 @@ class Encrypt:
         # 3，返回加密后的结果
         return md5.hexdigest()
 
+
 if __name__ == '__main__':
-    print(Encrypt().get_md5('14459'))
+    print(Encrypt.get_md5('14459'))
